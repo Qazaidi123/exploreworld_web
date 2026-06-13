@@ -66,16 +66,22 @@ Developer pushes code to GitHub → Jenkins pulls code from GitHub repo → Sona
 ## 6. Screenshots
 
 - Jenkins Pipeline
-- ![Jenkins pipeline](screenshots/jenkinspipeline_20260408-232141_Chrome.jpg)
+- ![Jenkins pipeline](screenshots/jenkins.png)
+- 
 - Kubernetes Pods and Services
-- ![kubernetes Pods & SVC](screenshots/pods_svc_20260408-233015_Termius.jpg)
+- ![kubernetes Pods & SVC](screenshots/EC2.png)
+- 
 - AWS EKS Cluster
-- ![EKS Cluster](screenshots/eks_cluster_20260408-233311_Chrome.jpg)
-- Website Output
-- ![Website Page](screenshots/websitepage1_20260408-231544_Chrome.jpg)
-- ![Website Page 2](screenshots/websitepage2_20260408-231606_Chrome.jpg)
+- ![EKS Cluster](screenshots/EKS.png)
+- 
+- Website
+- ![Website Page](screenshots/webpage1.png)
+- ![Website Page 2](screenshots/webpage2.png)
+- ![Website Page 2](screenshots/Regsuccess.png)
+- 
 - DockerHub Images
-- ![DockerHub](screenshots/dockerhub_20260408-233236_Chrome.jpg)
+- ![DockerHub](screenshots/dockerhubBack.png)
+- ![DockerHub](screenshots/dockerhubfront.png)
 
 ---
 
