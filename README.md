@@ -87,7 +87,7 @@ Developer pushes code to GitHub → Jenkins pulls code from GitHub repo → Sona
 
 ## 7.Challenges and Solutions
 
-## 1. SonarQube Analysis Issue
+## a) SonarQube Analysis Issue
 **Error:** Failed to query server version: HTTP connect timed out  
 
 **Solution:**  
@@ -95,13 +95,13 @@ Manage Jenkins → System → SonarQube Installation → Update URL
 
 Since EC2 public IP changes on every restart of EC2 it is required to change update new IP in Manage --> System --> Sonarqube URL , update URL: http://<public-ip>:9000
 
-## 2. Trivy Not Found
+## b) Trivy Not Found
 **Error:** trivy: not found  
 
 **Solution:**  
 Installed Trivy using official documentation: https://trivy.dev/  
 
-## 3. Kubectl Configuration Issue
+## c) Kubectl Configuration Issue
 **Error:**   The connection to the server 127.0.0.1:34897 was refused  
 
 **Reason:**  kubectl was not connected to EKS cluster (missing kubeconfig). 
