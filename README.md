@@ -77,7 +77,7 @@ Developer pushes code to GitHub → Jenkins pulls code from GitHub repo → Sona
 - Website
 - ![Website Page](screenshots/webpage1.png)
 - ![Website Page 2](screenshots/webpage2.png)
-- ![Website Page 2](screenshots/Regsuccess.png)
+- ![Website Registration](screenshots/RegSucess.png)
 - 
 - DockerHub Images
 - ![DockerHub](screenshots/dockerhubBack.png)
