@@ -1,0 +1,63 @@
+apiVersion: apps/v1
+kind: Deployment
+
+metadata:
+  name: database-deployment
+  labels:
+    app: database-depl
+
+spec:
+  replicas: 1
+
+  selector:
+    matchLabels:
+      app: database
+
+  template:
+    metadata:
+      labels:
+        app: database
+
+    spec:
+      containers:
+      - name: database-container
+        image: mysql:5.7
+
+        env:
+        - name: MYSQL_ROOT_PASSWORD
+          valueFrom:
+             configMapKeyRef:
+               name: expo-config
+               key: DB_PASS
+
+        - name: MYSQL_DATABASE
+          valueFrom:
+             configMapKeyRef:
+               name: expo-config
+               key: DB_NAME
+
+        - name: MYSQL_USER
+          valueFrom:
+             configMapKeyRef:
+               name: expo-config
+               key: DB_USER
+
+        - name: MYSQL_PASSWORD
+          valueFrom:
+             configMapKeyRef:
+               name: expo-config
+               key: DB_PASS
+
+        
+
+        ports:
+        - containerPort: 3306
+
+        volumeMounts:
+        - name: mysql-initdb
+          mountPath: /docker-entrypoint-initdb.d
+
+      volumes:
+      - name: mysql-initdb
+        configMap:
+          name: mysql-initdb-config
