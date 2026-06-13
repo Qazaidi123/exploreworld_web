@@ -14,7 +14,7 @@ pipeline {
 
     stage("git repo clone") {
       steps {
-        git url: "https://github.com/Qazaidi123/Exploreworld.git", branch: "main"
+        git url: "https://github.com/Qazaidi123/exploreworld_web.git", branch: "main"
       }
     } 
                 
