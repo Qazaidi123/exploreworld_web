@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: expo-config
+data:
+  DB_HOST : mysql-service
+  DB_NAME : exploreworldname
+  DB_USER : exploreworlduser
+  DB_PASS : explore123
+
+  
